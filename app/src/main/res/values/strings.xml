@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Meu R.U</string>
+
+    <!-- STRING Toolbar -->
+    <string name="txt_menu">Restaurante Universitário do ICET</string>
+
+    <!-- STRING TELA LOGIN -->
+    <string name="mostrar_senha">Mostrar Senha</string>
+    <string name="login">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="email">E-mail</string>
+    <string name="txt_tela_login">Login</string>
+
+
 </resources>
