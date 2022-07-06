@@ -24,7 +24,7 @@ interface RetrofitServiceLogin {
             retrofit.create(RetrofitServiceLogin::class.java)
         }
 
-        fun getIntance(): RetrofitServiceLogin {
+        fun getInstance(): RetrofitServiceLogin {
             return retrofitServiceLogin
         }
 
