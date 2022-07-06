@@ -10,7 +10,7 @@ interface RetrofitServiceCardapio {
 
 
     @GET("/cardapio")
-    fun getAllAlunos(): Call<List<DadosCardapio>>
+    fun getAllCardapio(): Call<List<DadosCardapio>>
 
 
     companion object {
