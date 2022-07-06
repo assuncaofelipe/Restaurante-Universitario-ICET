@@ -50,7 +50,6 @@ class LoginActivity : AppCompatActivity() {
             loadingView.show()
 
         }
-
     }
 
     override fun onStart() {
