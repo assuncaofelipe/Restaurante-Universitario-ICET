@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".views.LoginActivity">
 
     <TextView
         android:id="@+id/tvLogin"
@@ -21,7 +21,7 @@
 
 
     <EditText
-        android:id="@+id/edit_email"
+        android:id="@+id/edit_matricula"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -32,7 +32,7 @@
         android:drawableStart="@drawable/custom_ic_school"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="@string/email"
+        android:hint="@string/matricula"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:paddingStart="12dp"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_matricula" />
 
     <CheckBox
         android:id="@+id/ckb_mostrar_senha"
@@ -96,16 +96,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ckb_mostrar_senha" />
 
-    <!--
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
-         -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

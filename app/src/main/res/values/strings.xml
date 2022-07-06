@@ -6,10 +6,11 @@
 
     <!-- STRING TELA LOGIN -->
     <string name="mostrar_senha">Mostrar Senha</string>
-    <string name="login">Entrar</string>
+    <string name="txtlogin">Entrar</string>
     <string name="senha">Senha</string>
-    <string name="email">E-mail</string>
+    <string name="matricula">Matrícula Institucional</string>
     <string name="txt_login">Login</string>
+    <string name="login">login</string>
 
 
 </resources>

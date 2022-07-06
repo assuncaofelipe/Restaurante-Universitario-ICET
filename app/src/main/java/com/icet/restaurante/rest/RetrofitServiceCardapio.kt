@@ -1,6 +1,6 @@
 package com.icet.restaurante.rest
 
-import com.icet.restaurante.models.DadosCardapio
+import com.icet.restaurante.models.Cardapio
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -10,7 +10,7 @@ interface RetrofitServiceCardapio {
 
 
     @GET("/cardapio")
-    fun getAllCardapio(): Call<List<DadosCardapio>>
+    fun getAllCardapio(): Call<List<Cardapio>>
 
 
     companion object {
@@ -24,7 +24,7 @@ interface RetrofitServiceCardapio {
             retrofit.create(RetrofitServiceCardapio::class.java)
         }
 
-        fun getIntance() : RetrofitServiceCardapio {
+        fun getIntance(): RetrofitServiceCardapio {
             return RetrofitServiceCardapio.retrofitServiceCardapio
         }
 
