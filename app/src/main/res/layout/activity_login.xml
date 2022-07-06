@@ -6,11 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".views.LoginActivity">
 
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <TextView
         android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
         android:text="@string/txt_login"
         android:textColor="@color/cor_verde"
         android:textSize="30sp"
@@ -28,6 +35,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="5dp"
         android:autofillHints=""
+        android:layout_gravity="center_horizontal"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_ic_school"
         android:drawablePadding="12dp"
@@ -53,6 +61,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="5dp"
         android:autofillHints=""
+        android:layout_gravity="center_horizontal"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_key"
         android:drawablePadding="12dp"
@@ -76,6 +85,7 @@
         android:layout_marginTop="16dp"
         android:buttonTint="@color/cor_verde"
         android:text="@string/mostrar_senha"
+        android:layout_marginLeft="52dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.191"
@@ -89,6 +99,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_button"
+        android:layout_gravity="center_horizontal"
         android:text="@string/login"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,5 +107,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ckb_mostrar_senha" />
 
+    </LinearLayout>
+
+    <com.icet.restaurante.views.componentes.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:visible="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
