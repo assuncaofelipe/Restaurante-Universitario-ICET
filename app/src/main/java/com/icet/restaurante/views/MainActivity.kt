@@ -1,7 +1,8 @@
-package com.icet.restaurante
+package com.icet.restaurante.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.icet.restaurante.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
