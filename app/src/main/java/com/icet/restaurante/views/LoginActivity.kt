@@ -1,6 +1,5 @@
 package com.icet.restaurante.views
 
-import android.app.ProgressDialog.show
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -11,6 +10,7 @@ import com.icet.restaurante.databinding.ActivityLoginBinding
 import com.icet.restaurante.models.LoginRequest
 import com.icet.restaurante.models.UserSession
 import com.icet.restaurante.repositories.UserRepository
+import com.icet.restaurante.rest.RetrofitProvider
 import com.icet.restaurante.rest.RetrofitServiceLogin
 import com.icet.restaurante.viewmodel.login.LoginViewModel
 import com.icet.restaurante.viewmodel.login.LoginViewModelFactory
@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var _binding: ActivityLoginBinding
     private lateinit var viewModel: LoginViewModel
-    private val retrofitServiceLogin = RetrofitServiceLogin.getIntance()
+    private val retrofitServiceLogin = RetrofitProvider.getInstance<RetrofitServiceLogin>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
